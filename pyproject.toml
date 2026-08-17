@@ -1,0 +1,17 @@
+[project]
+name = "fx-pipeline"
+version = "0.1.0"
+description = "ELT pipeline for BNR exchange rates"
+readme = "README.md"
+authors = [
+    { name = "Andreea Firtat", email = "a.firtat@yahoo.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+fx-pipeline = "fx_pipeline:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
