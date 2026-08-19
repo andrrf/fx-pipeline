@@ -7,7 +7,9 @@ authors = [
     { name = "Andreea Firtat", email = "a.firtat@yahoo.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "httpx>=0.28.1",
+]
 
 [project.scripts]
 fx-pipeline = "fx_pipeline:main"
