@@ -1,0 +1,29 @@
+[0m15:59:07.746654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e512d02c950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e512f4de180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e512dbe70b0>]}
+
+
+============================== 15:59:07.798970 | 1e8385ef-084f-42be-baa4-4381faafe462 ==============================
+[0m15:59:07.798970 [info ] [MainThread]: Running with dbt=1.12.3
+[0m15:59:07.801228 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'partial_parse': 'True', 'debug': 'False', 'write_json': 'True', 'use_colors': 'True', 'static_parser': 'True', 'hints_enabled': 'True', 'target_path': 'None', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'quiet': 'False', 'cache_selected_only': 'False', 'invocation_command': 'dbt init fx_dwh --skip-profile-setup', 'version_check': 'True', 'profiles_dir': '/home/firtat/.dbt', 'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'log_format': 'default', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'empty': 'None', 'log_path': 'logs', 'maximum_seed_size_mib': '1'}
+[0m15:59:07.885087 [info ] [MainThread]: Creating dbt configuration folder at /home/firtat/.dbt
+[0m15:59:07.888931 [debug] [MainThread]: Starter project path: /home/firtat/dev/fx-pipeline/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m15:59:07.899660 [info ] [MainThread]: Your new dbt project "fx_dwh" was created!
+Initialized new project in /home/firtat/dev/fx-pipeline/dbt/fx_dwh/fx_dwh
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:59:07.902693 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.26440963, "process_in_blocks": "56", "process_kernel_time": 0.308469, "process_mem_max_rss": "129304", "process_out_blocks": "1488", "process_user_time": 1.842482}
+[0m15:59:07.903611 [debug] [MainThread]: Command `dbt init` succeeded at 15:59:07.903440 after 0.27 seconds
+[0m15:59:07.904219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e512da669c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e512d005610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e512d115b50>]}
+[0m15:59:07.904859 [debug] [MainThread]: Flushing usage events
+[0m15:59:08.609897 [debug] [MainThread]: An error was encountered while trying to flush usage events

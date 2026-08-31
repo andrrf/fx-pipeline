@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    description: "Raw BNR exchange rates, loaded by the Python pipeline."
+    tables:
+      - name: fx_rates
+        description: "One row per banking day and currency, exactly as published by BNR."
+        columns:
+          - name: rate_date
+            description: "The banking day the rate applies to."
+            tests:
+              - not_null
+          - name: currency
+            description: "ISO 4217 currency code."
+            tests:
+              - not_null
+          - name: multiplier
+            description: "Number of currency units the rate refers to(1 or 100)."
+            tests:
+              - not_null
+          - name: value
+            description: "Raw rate in RON, for 'multiplier' units. Not normalized."
+            tests:
+              - not_null

@@ -12,3 +12,8 @@ wheels/
 # Secrete
 .env
 data/
+
+# dbt
+dbt/fx_dwh/target/
+dbt/fx_dwh/dbt_packages/
+dbt/fx_dwh/logs/
